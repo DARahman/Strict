@@ -1,0 +1,231 @@
+*{margin: 0%;
+padding: 0%;}
+header{background: #f9f9f9f9;
+}
+.header-wrapper{width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{width: 20%;
+
+}
+nav{width: 35%;
+
+}
+nav ul{list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+
+}
+nav ul li a{text-decoration: none;
+    color: #2d3950;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.banner{
+    background-image: url(../image/banner.png);
+    min-height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-content{
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.banner-content h1{color: #fff;
+    font-size: 100px;
+    text-transform: uppercase;
+
+}
+.banner-content span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #15a4fa;
+
+}
+.banner-content p{color: #fff;
+    margin: 15px;
+    font-size: 16px;
+
+}
+.banner-content button{
+    background: transparent;
+    border: none;
+    border: 1px solid #15a4fa;
+    color: #fff;
+    margin: 100px;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+.banner-content button:focus{
+    outline: none;
+}
+.banner-content button:hover{
+    color: #fff;
+    background-color: #15a4fa;
+}
+.icon{
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    animation: ani 0.75s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes ani {
+    0%{
+        top: 95%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+
+.design{background-color: #f6f9f9;
+    padding: 50px 0;
+
+}
+.content{width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+.content h2{
+    color: #2d3950;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 23px;
+}
+.content p{
+    color: #999999;
+    font-size: 18px;
+    margin-top: 8px;
+
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+.feature-section{
+    padding: 50px 0;
+
+}
+.single-feature{width: 30%;
+    text-align: center;
+
+}
+.feature-icon{height: 90px;
+    width: 90px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,53c3ff+50,53c3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 0%, #48baff 50%, #53c3ff 50%, #53c3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 0%,#48baff 50%,#53c3ff 50%,#53c3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#53c3ff 50%,#53c3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#53c3ff',GradientType=1 ); /* IE6-9 */
+
+    color: white;
+    margin: auto;
+    font-size: 40px;
+    line-height: 90px;
+
+}
+.single-feature h4{color: #2d3950;
+    text-transform: capitalize;
+    margin: 10px 0;
+    font-size: 18px;
+
+}
+.single-feature p{color: #999999;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.showcase{background: #f6f9f9;
+    padding: 50px 0;
+
+
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+
+}
+.heading p{
+
+}
+.gallery{display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+
+}
+.single-gallery{width: 30%;
+
+}
+.img{
+    position: relative;
+
+}
+.img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #48baff;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    
+}
+.single-gallery:hover .img::before{
+    opacity: 0.5;
+    width: 100%;
+}
+.img img{width: 100%;
+
+}
+.gallery-icon{position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s all ease-in-out;
+
+}
+.gallery-icon ul{list-style: none;
+    
+
+
+}
+.gallery-icon ul li{float: left;
+    margin: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.single-gallery:hover .gallery-icon{
+    opacity: 1;
+}
